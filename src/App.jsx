@@ -15,7 +15,7 @@ function App() {
                     className="bg-[#00000033] absolute top-0 left-0 w-full h-full"
                 ></div>
                 <AppHeader />
-                <HeroSection />
+                <HeroSection movie={movies[0]} />
             </main>
         </>
     );

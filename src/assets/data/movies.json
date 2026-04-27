@@ -1,5 +1,21 @@
 [
     {
+        "title": "Monsters University",
+        "description": "A look at the relationship between Mike and Sulley during their days at Monsters University, when they weren't necessarily the best of friends.",
+        "releaseYear": 2013,
+        "gender": "Animation/Comedy",
+        "director": "Dan Scanlon",
+        "mainActors": [
+            "Billy Crystal",
+            "John Goodman",
+            "Steve Buscemi",
+            "Helen Mirren"
+        ],
+        "image": "https://example.com",
+        "trailer": "https://www.youtube.com/watch?v=xBzPioph8CI",
+        "rating": 4
+    },
+    {
         "title": "Inception",
         "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
         "releaseYear": 2010,
@@ -10,7 +26,7 @@
             "Joseph Gordon-Levitt",
             "Elliot Page"
         ],
-        "image": "https://example.com/images/inception.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyuWmayVBvqjd1MxTKpRgauq2cCtUzb7Q9QvaFTkAuxAU_EYMoCE3wBuJeftxIzf0grreIw&s=10",
         "trailer": "https://youtube.com",
         "rating": 5
     },
@@ -21,7 +37,7 @@
         "gender": "Action",
         "director": "Christopher Nolan",
         "mainActors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-        "image": "https://example.com/images/dark-knight.jpg",
+        "image": "https://www.amazon.com/Dark-Knight-Christian-Bale/dp/B0B6PKFVHR",
         "trailer": "https://youtube.com",
         "rating": 5
     },
@@ -32,7 +48,7 @@
         "gender": "Thriller",
         "director": "Bong Joon-ho",
         "mainActors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
-        "image": "https://example.com/images/parasite.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTRGm5Vxt-AKoe72ASaC0F1w58TkuIQTuYrjrzhHkAcZYXXUS9WQdAuaikkuRMX50MWN01lw&s=10",
         "trailer": "https://youtube.com",
         "rating": 4
     },
@@ -43,7 +59,7 @@
         "gender": "Sci-Fi/Adventure",
         "director": "Daniel Kwan, Daniel Scheinert",
         "mainActors": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
-        "image": "https://example.com/images/eeaaow.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6n0N5NVFJhglILQYRF9hswb8iQ4lOw3cF2Qy7pH9aRPLZEnGW9cUbWYhyqTko_VJL7D8zQ&s=10",
         "trailer": "https://youtube.com",
         "rating": 5
     },
@@ -54,7 +70,7 @@
         "gender": "Animation",
         "director": "Hayao Miyazaki",
         "mainActors": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
-        "image": "https://example.com/images/spirited-away.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BOXxai36m4TLf6kXGg9eCzc6JDDbyr6cO6GwsPvgl-BWGCaIw0X3LbP6Vy18dXX9gAvM&s=10",
         "trailer": "https://youtube.com",
         "rating": 5
     }
