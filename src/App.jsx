@@ -1,7 +1,8 @@
 import "./App.css";
+import movies from "./assets/data/movies.json";
 import AppHeader from "./components/layout/AppHeader";
 import HeroSection from "./components/hero/HeroSection";
-import movies from "./assets/data/movies.json";
+import MoviesSection from "./components/movies/MoviesSection";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <AppHeader />
                 <HeroSection movie={movies[0]} />
             </main>
+            <MoviesSection />
         </>
     );
 }
