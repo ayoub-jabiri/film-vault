@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Monsters University",
         "description": "A look at the relationship between Mike and Sulley during their days at Monsters University, when they weren't necessarily the best of friends.",
         "releaseYear": 2013,
@@ -16,6 +17,7 @@
         "rating": 4
     },
     {
+        "id": 2,
         "title": "Inception",
         "description": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
         "releaseYear": 2010,
@@ -31,6 +33,7 @@
         "rating": 5
     },
     {
+        "id": 3,
         "title": "The Dark Knight",
         "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
         "releaseYear": 2008,
@@ -42,6 +45,7 @@
         "rating": 5
     },
     {
+        "id": 4,
         "title": "Parasite",
         "description": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
         "releaseYear": 2019,
@@ -53,6 +57,7 @@
         "rating": 4
     },
     {
+        "id": 5,
         "title": "Everything Everywhere All at Once",
         "description": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.",
         "releaseYear": 2022,
@@ -64,6 +69,7 @@
         "rating": 5
     },
     {
+        "id": 6,
         "title": "Spirited Away",
         "description": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
         "releaseYear": 2001,
