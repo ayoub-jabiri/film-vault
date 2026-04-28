@@ -11,7 +11,7 @@
             "Steve Buscemi",
             "Helen Mirren"
         ],
-        "image": "https://example.com",
+        "image": "/hero.png",
         "trailer": "https://www.youtube.com/watch?v=xBzPioph8CI",
         "rating": 4
     },
@@ -37,7 +37,7 @@
         "gender": "Action",
         "director": "Christopher Nolan",
         "mainActors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-        "image": "https://www.amazon.com/Dark-Knight-Christian-Bale/dp/B0B6PKFVHR",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA&s=10",
         "trailer": "https://youtube.com",
         "rating": 5
     },
