@@ -23,7 +23,7 @@ export default function MovieDetails({ section, movie }) {
                     <img
                         src={movie.image}
                         alt={movie.title}
-                        className="w-[300px] h-[300px] rounded-md"
+                        className="w-75 h-75 rounded-md"
                     />
                     <div className="w-[50%]">
                         <h5 className="text-2xl font-bold whitespace-nowrap overflow-hidden">
