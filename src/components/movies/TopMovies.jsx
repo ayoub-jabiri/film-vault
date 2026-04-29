@@ -1,8 +1,7 @@
 import MovieCard from "./MovieCard";
-import topMovies from "../../assets/data/top-movies.json";
 
-export default function TopMovies() {
-    const topMoviesList = topMovies.map((el) => (
+export default function TopMovies({ movies }) {
+    const topMoviesList = movies.map((el) => (
         <MovieCard key={el.id} movie={el} />
     ));
     return (

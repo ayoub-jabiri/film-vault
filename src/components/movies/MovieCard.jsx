@@ -1,3 +1,4 @@
+import { RiStarFill } from "@remixicon/react";
 import MovieDetails from "./MovieDetails";
 
 export default function MovieCard({ movie }) {
@@ -11,8 +12,9 @@ export default function MovieCard({ movie }) {
                 className="relative w-[80%] mx-auto border border-[#30335B] hover:border-white rounded-md overflow-auto hover:translate-y-[-10px]"
                 style={{ transition: "0.3s" }}
             >
-                <span className="absolute top-2 right-2 bg-[#2196F3] text-white px-2 rounded-md border border-black">
-                    {movie.rating}
+                <span className="absolute top-2 right-2 bg-[#cfbe29] text-black px-2 rounded-md border border-black flex justify-center items-start gap-0.5">
+                    <span>{movie.rating}</span>
+                    <RiStarFill className="w-[11px]" />
                 </span>
                 <img
                     src={movie.image}

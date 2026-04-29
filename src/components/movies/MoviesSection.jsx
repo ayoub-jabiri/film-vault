@@ -1,12 +1,12 @@
 import TopMovies from "./TopMovies";
 import MoviesList from "./MoviesList";
 
-export default function MoviesSection() {
+export default function MoviesSection({ movies }) {
     return (
         <section className="bg-[#111025] py-10 text-white">
             <div className="container">
-                <TopMovies />
-                <MoviesList />
+                <TopMovies movies={movies} />
+                <MoviesList movies={movies} />
             </div>
         </section>
     );

@@ -1,10 +1,13 @@
 import "./App.css";
-import movies from "./assets/data/movies.json";
+// import movies from "./assets/data/movies.json";
 import AppHeader from "./components/layout/AppHeader";
 import HeroSection from "./components/hero/HeroSection";
 import MoviesSection from "./components/movies/MoviesSection";
 
 function App() {
+    // localStorage.setItem("movies", JSON.stringify(movies));
+    let movies = JSON.parse(localStorage.getItem("movies")) || [];
+
     return (
         <>
             <main
@@ -18,7 +21,7 @@ function App() {
                 <AppHeader />
                 <HeroSection movie={movies[0]} />
             </main>
-            <MoviesSection />
+            <MoviesSection movies={movies} />
         </>
     );
 }
