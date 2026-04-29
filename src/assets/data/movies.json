@@ -13,7 +13,7 @@
             "Helen Mirren"
         ],
         "image": "/hero.png",
-        "trailer": "https://www.youtube.com/watch?v=xBzPioph8CI",
+        "trailer": "https://www.youtube.com/embed/QxrQ6BaijAY?si=Axb8VR0w9Sr7yLsB",
         "rating": 4
     },
     {
@@ -29,7 +29,7 @@
             "Elliot Page"
         ],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyuWmayVBvqjd1MxTKpRgauq2cCtUzb7Q9QvaFTkAuxAU_EYMoCE3wBuJeftxIzf0grreIw&s=10",
-        "trailer": "https://youtube.com",
+        "trailer": "https://www.youtube.com/embed/YoHD9XEInc0?si=l52YCHw8u44Y_BvN",
         "rating": 5
     },
     {
@@ -41,7 +41,7 @@
         "director": "Christopher Nolan",
         "mainActors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA&s=10",
-        "trailer": "https://youtube.com",
+        "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY?si=uicYTCXcG_usQbZc",
         "rating": 5
     },
     {
@@ -53,7 +53,7 @@
         "director": "Bong Joon-ho",
         "mainActors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTRGm5Vxt-AKoe72ASaC0F1w58TkuIQTuYrjrzhHkAcZYXXUS9WQdAuaikkuRMX50MWN01lw&s=10",
-        "trailer": "https://youtube.com",
+        "trailer": "https://www.youtube.com/embed/isOGD_7hNIY?si=SJoLQHxYZfmsfYU2",
         "rating": 4
     },
     {
@@ -65,7 +65,7 @@
         "director": "Daniel Kwan, Daniel Scheinert",
         "mainActors": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6n0N5NVFJhglILQYRF9hswb8iQ4lOw3cF2Qy7pH9aRPLZEnGW9cUbWYhyqTko_VJL7D8zQ&s=10",
-        "trailer": "https://youtube.com",
+        "trailer": "https://www.youtube.com/embed/wxN1T1uxQ2g?si=IrxZlNMTnGvkVyrx",
         "rating": 5
     },
     {
@@ -77,7 +77,7 @@
         "director": "Hayao Miyazaki",
         "mainActors": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BOXxai36m4TLf6kXGg9eCzc6JDDbyr6cO6GwsPvgl-BWGCaIw0X3LbP6Vy18dXX9gAvM&s=10",
-        "trailer": "https://youtube.com",
+        "trailer": "https://www.youtube.com/embed/ByXuk9QqQkk?si=wdg_V5xurGkfBtQ-",
         "rating": 5
     }
 ]
