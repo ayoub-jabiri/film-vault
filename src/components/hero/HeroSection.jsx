@@ -1,9 +1,9 @@
-import { RiPlayFill, RiArrowRightSLine } from "@remixicon/react";
+import { RiArrowRightSLine } from "@remixicon/react";
 import MovieDetails from "../movies/MovieDetails";
 
 export default function HeroSection({ movie }) {
     function showDetails() {
-        document.getElementById(`movie-list-${movie.id}`).style.scale = "1";
+        document.getElementById(`movie-hero-${movie.id}`).style.scale = "1";
     }
 
     return (
@@ -14,18 +14,14 @@ export default function HeroSection({ movie }) {
                 <span>{movie.gender}</span> • <span>{movie.releaseYear}</span> •{" "}
                 <span>{`${movie.rating}/5`}</span>
             </div>
-            <div className="flex items-center gap-3 text-sm">
-                <button className="flex items-center bg-white text-black border border-white px-4 py-2 rounded-3xl cursor-pointer">
-                    <span>Watch Trailer</span> <RiPlayFill />
-                </button>
-                <button
-                    className="flex items-center bg-transparent text-white border border-white px-4 py-2 rounded-3xl cursor-pointer"
-                    onClick={showDetails}
-                >
-                    <span>Details</span> <RiArrowRightSLine />
-                </button>
-            </div>
-            <MovieDetails section={"hero"} movie={movie} />
+            <button
+                className="flex items-center bg-transparent text-white text-sm w-fit border border-white hover:bg-white hover:text-black px-4 py-2 rounded-3xl cursor-pointer"
+                style={{ transition: "0.3s" }}
+                onClick={showDetails}
+            >
+                <span>View Details</span> <RiArrowRightSLine />
+            </button>
+            <MovieDetails section={"hero"} movie={movie} className="111" />
         </section>
     );
 }

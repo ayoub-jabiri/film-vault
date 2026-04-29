@@ -1,9 +1,20 @@
 import { RiCloseLine, RiPlayFill } from "@remixicon/react";
+import MovieTrailer from "./MovieTrailer";
+import { useState } from "react";
 
 export default function MovieDetails({ section, movie }) {
     function hideDetails() {
         document.getElementById(`movie-${section}-${movie.id}`).style.scale =
             "0";
+    }
+
+    const trailerId = `trailer-${section}-${movie.id}`;
+    const [movieTrailerValue, setMovieTrailerValue] = useState(movie.trailer);
+    function showTrailer() {
+        setMovieTrailerValue(movie.trailer);
+        document.getElementById(
+            `trailer-${section}-${movie.id}`
+        ).style.display = "flex";
     }
 
     return (
@@ -42,9 +53,19 @@ export default function MovieDetails({ section, movie }) {
                         <span className="block text-[#ddd]">
                             Rating: {`${movie.rating}/5`}
                         </span>
-                        <button className="flex items-center bg-white text-sm text-black border border-white px-4 py-3 mt-4 rounded-3xl cursor-pointer">
+                        <button
+                            className="flex items-center bg-white text-sm text-black border border-white px-4 py-3 mt-4 rounded-3xl cursor-pointer"
+                            onClick={showTrailer}
+                        >
                             <span>Watch Trailer</span> <RiPlayFill />
                         </button>
+                        <MovieTrailer
+                            id={trailerId}
+                            section={section}
+                            movieId={movie.id}
+                            movieTrailer={movieTrailerValue}
+                            setMovieTrailerValue={setMovieTrailerValue}
+                        />
                     </div>
                 </div>
             </div>
