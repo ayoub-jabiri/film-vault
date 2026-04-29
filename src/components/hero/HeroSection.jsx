@@ -11,7 +11,8 @@ export default function HeroSection({ movie }) {
             <h1 className="text-5xl font-bold">{movie.title}</h1>
             <p className="w-[50%]">{movie.description}</p>
             <div className="text-sm">
-                <span>{movie.gender}</span> • <span>{movie.releaseYear}</span> •{" "}
+                <span>{movie.category}</span> • <span>{movie.releaseYear}</span>{" "}
+                •{" "}
                 <span className="flex items-center">
                     <RiStarFill className="w-[11px]" />{" "}
                     <span>{`${movie.rating}/5`}</span>

@@ -30,7 +30,9 @@ export default function MovieCard({ movie }) {
                             ? movie.title
                             : movie.title.slice(0, 20) + "..."}
                     </h3>
-                    <span className="text-sm text-[#ddd]">{movie.gender}</span>
+                    <span className="text-sm text-[#ddd]">
+                        {movie.category}
+                    </span>
                     <button
                         className="block bg-transparent text-[#30335B] border-[#30335B] group-hover:text-white group-hover:border-white text-sm px-4 py-2 mt-2 mx-auto border rounded-md cursor-pointer"
                         onClick={showDetails}
