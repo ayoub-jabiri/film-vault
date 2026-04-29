@@ -9,7 +9,7 @@ export default function MovieCard({ movie }) {
     return (
         <div className="col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3">
             <div
-                className="relative w-[80%] mx-auto border border-[#30335B] hover:border-white rounded-md overflow-auto hover:translate-y-[-10px]"
+                className="relative w-[80%] mx-auto border border-[#30335B] group hover:border-white rounded-md overflow-auto hover:translate-y-[-10px]"
                 style={{ transition: "0.3s" }}
             >
                 <span className="absolute top-2 right-2 bg-[#cfbe29] text-black px-2 rounded-md border border-black flex justify-center items-start gap-0.5">
@@ -32,7 +32,7 @@ export default function MovieCard({ movie }) {
                     </h3>
                     <span className="text-sm text-[#ddd]">{movie.gender}</span>
                     <button
-                        className="block bg-transparent text-white text-sm px-4 py-2 mt-2 mx-auto border border-white rounded-md cursor-pointer"
+                        className="block bg-transparent text-[#30335B] border-[#30335B] group-hover:text-white group-hover:border-white text-sm px-4 py-2 mt-2 mx-auto border rounded-md cursor-pointer"
                         onClick={showDetails}
                     >
                         View Details
