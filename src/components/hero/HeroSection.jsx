@@ -1,4 +1,4 @@
-import { RiArrowRightSLine } from "@remixicon/react";
+import { RiArrowRightSLine, RiStarFill } from "@remixicon/react";
 import MovieDetails from "../movies/MovieDetails";
 
 export default function HeroSection({ movie }) {
@@ -12,7 +12,10 @@ export default function HeroSection({ movie }) {
             <p className="w-[50%]">{movie.description}</p>
             <div className="text-sm">
                 <span>{movie.gender}</span> • <span>{movie.releaseYear}</span> •{" "}
-                <span>{`${movie.rating}/5`}</span>
+                <span className="flex items-center">
+                    <RiStarFill className="w-[11px]" />{" "}
+                    <span>{`${movie.rating}/5`}</span>
+                </span>
             </div>
             <button
                 className="flex items-center bg-transparent text-white text-sm w-fit border border-white hover:bg-white hover:text-black px-4 py-2 rounded-3xl cursor-pointer"

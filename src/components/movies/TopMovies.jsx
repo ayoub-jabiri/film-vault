@@ -6,7 +6,7 @@ export default function TopMovies({ movies }) {
     ));
     return (
         <div>
-            <h2 className="text-2xl font-bold mb-4">List of Top Movies</h2>
+            <h2 className="text-2xl font-bold mb-6">List of Top Movies</h2>
             <div className="grid grid-cols-12 gap-5">{topMoviesList}</div>
         </div>
     );
