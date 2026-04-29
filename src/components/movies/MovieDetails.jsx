@@ -8,14 +8,7 @@ export default function MovieDetails({ section, movie }) {
             "0";
     }
 
-    const trailerId = `trailer-${section}-${movie.id}`;
-    const [movieTrailerValue, setMovieTrailerValue] = useState(movie.trailer);
-    function showTrailer() {
-        setMovieTrailerValue(movie.trailer);
-        document.getElementById(
-            `trailer-${section}-${movie.id}`
-        ).style.display = "flex";
-    }
+    const [showTrailer, setShowTrailer] = useState(false);
 
     return (
         <div
@@ -55,17 +48,16 @@ export default function MovieDetails({ section, movie }) {
                         </span>
                         <button
                             className="flex items-center bg-white text-sm text-black border border-white px-4 py-3 mt-4 rounded-3xl cursor-pointer"
-                            onClick={showTrailer}
+                            onClick={() => setShowTrailer(true)}
                         >
                             <span>Watch Trailer</span> <RiPlayFill />
                         </button>
-                        <MovieTrailer
-                            id={trailerId}
-                            section={section}
-                            movieId={movie.id}
-                            movieTrailer={movieTrailerValue}
-                            setMovieTrailerValue={setMovieTrailerValue}
-                        />
+                        {showTrailer && (
+                            <MovieTrailer
+                                movieTrailer={movie.trailer}
+                                setShowTrailer={setShowTrailer}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
