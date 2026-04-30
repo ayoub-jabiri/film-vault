@@ -2,13 +2,34 @@ import { RiCloseLine, RiPlayFill, RiStarFill } from "@remixicon/react";
 import MovieTrailer from "./MovieTrailer";
 import { useState } from "react";
 
-export default function MovieDetails({ section, movie }) {
+export default function MovieDetails({
+    section,
+    setShowDetails,
+    forceUpdate,
+    movie,
+}) {
     function hideDetails() {
         document.getElementById(`movie-${section}-${movie.id}`).style.scale =
             "0";
+
+        setTimeout(() => {
+            setShowDetails(false);
+        }, 300);
     }
 
     const [showTrailer, setShowTrailer] = useState(false);
+
+    function deleteMovie() {
+        const movies = JSON.parse(localStorage.getItem("movies"));
+        const currentMovieIndex = movies.findIndex((el) => el.id == movie.id);
+
+        movies.splice(currentMovieIndex, 1);
+        localStorage.setItem("movies", JSON.stringify(movies));
+
+        // hideDetails();
+        setShowDetails(false);
+        forceUpdate({});
+    }
 
     return (
         <div
@@ -59,13 +80,13 @@ export default function MovieDetails({ section, movie }) {
                             </button>
                             <button
                                 className="bg-[#2196F3] text-sm text-white w-[140px] py-3 mt-4 rounded-md cursor-pointer"
-                                onClick={() => setShowTrailer(true)}
+                                onClick={deleteMovie}
                             >
                                 Update
                             </button>
                             <button
                                 className="bg-[#F44336] text-sm text-white w-[140px] py-3 mt-4 rounded-md cursor-pointer"
-                                onClick={() => setShowTrailer(true)}
+                                onClick={deleteMovie}
                             >
                                 Delete
                             </button>

@@ -1,7 +1,7 @@
 import HeroSection from "./hero/HeroSection";
 import AppHeader from "./layout/AppHeader";
 
-export default function LandingSection({ movies }) {
+export default function LandingSection({ movies, forceUpdate }) {
     const topRating = Math.max(...movies.map((movie) => movie.rating));
 
     const topMovie = movies.filter((movie) => movie.rating == topRating)[0];
@@ -12,7 +12,7 @@ export default function LandingSection({ movies }) {
             style={{ backgroundImage: `url('${topMovie.heroImage}')` }}
         >
             <AppHeader />
-            <HeroSection movie={topMovie} />
+            <HeroSection movie={topMovie} forceUpdate={forceUpdate} />
         </main>
     );
 }

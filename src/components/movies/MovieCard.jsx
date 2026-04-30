@@ -1,8 +1,11 @@
 import { RiStarFill } from "@remixicon/react";
 import MovieDetails from "./MovieDetails";
+import { useState } from "react";
 
-export default function MovieCard({ movie }) {
-    function showDetails() {
+export default function MovieCard({ movie, forceUpdate }) {
+    const [showDetails, setShowDetails] = useState(false);
+    async function handleShowDetails() {
+        await setShowDetails(true);
         document.getElementById(`movie-list-${movie.id}`).style.scale = "1";
     }
 
@@ -36,13 +39,20 @@ export default function MovieCard({ movie }) {
                     <button
                         className="block bg-transparent text-[#30335B] border-[#30335B] group-hover:text-white group-hover:border-white text-sm px-4 py-2 mt-2 mx-auto border rounded-md cursor-pointer"
                         style={{ transition: "0.3s" }}
-                        onClick={showDetails}
+                        onClick={handleShowDetails}
                     >
                         View Details
                     </button>
                 </div>
             </div>
-            <MovieDetails section={"list"} movie={movie} />
+            {showDetails && (
+                <MovieDetails
+                    section={"list"}
+                    setShowDetails={setShowDetails}
+                    forceUpdate={forceUpdate}
+                    movie={movie}
+                />
+            )}
         </div>
     );
 }

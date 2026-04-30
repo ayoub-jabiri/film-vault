@@ -2,7 +2,7 @@ import { useState } from "react";
 import MovieCard from "./MovieCard";
 import MoviesFilter from "./MoviesFilter";
 
-export default function MoviesList({ movies }) {
+export default function MoviesList({ movies, forceUpdate }) {
     const categories = movies.map((el) => el.category);
 
     // Filter options
@@ -31,7 +31,7 @@ export default function MoviesList({ movies }) {
     }
 
     const moviesList = filteredMovies.map((el) => (
-        <MovieCard key={el.id} movie={el} />
+        <MovieCard key={el.id} movie={el} forceUpdate={forceUpdate} />
     ));
 
     return (
