@@ -13,7 +13,7 @@ export default function MoviesFilter({
                 <label htmlFor="category-filter">Cetegory:</label>
                 <select
                     id="category-filter"
-                    className="px-2 py-1 ml-4 border rounded-md"
+                    className="px-2 py-1 ml-4 border rounded-md [&:bg-red-white]"
                     value={currentFilter.category}
                     onChange={(e) => {
                         setCurrentFilter({
