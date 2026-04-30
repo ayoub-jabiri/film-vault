@@ -35,6 +35,7 @@ export default function MovieCard({ movie }) {
                     </span>
                     <button
                         className="block bg-transparent text-[#30335B] border-[#30335B] group-hover:text-white group-hover:border-white text-sm px-4 py-2 mt-2 mx-auto border rounded-md cursor-pointer"
+                        style={{ transition: "0.3s" }}
                         onClick={showDetails}
                     >
                         View Details
