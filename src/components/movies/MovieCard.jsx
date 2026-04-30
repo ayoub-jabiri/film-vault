@@ -19,7 +19,7 @@ export default function MovieCard({ movie }) {
                 <img
                     src={movie.image}
                     alt={movie.title}
-                    className="w-full h-[200px]"
+                    className="w-full h-[250px]"
                 />
                 <div id="movie-info" className="p-4">
                     <h3

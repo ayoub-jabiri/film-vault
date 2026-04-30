@@ -12,9 +12,10 @@
             "Steve Buscemi",
             "Helen Mirren"
         ],
-        "image": "/hero.png",
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2a/Monsters_University_poster_3.jpg",
+        "heroImage": "https://www.intofilm.org/intofilm-production/8007/scaledcropped/970x546/resources/8007/monsters-inc-image-2-disney.jpg",
         "trailer": "https://www.youtube.com/embed/QxrQ6BaijAY?si=Axb8VR0w9Sr7yLsB",
-        "rating": 4
+        "rating": 5
     },
     {
         "id": 2,
@@ -28,7 +29,8 @@
             "Joseph Gordon-Levitt",
             "Elliot Page"
         ],
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRyuWmayVBvqjd1MxTKpRgauq2cCtUzb7Q9QvaFTkAuxAU_EYMoCE3wBuJeftxIzf0grreIw&s=10",
+        "image": "https://m.media-amazon.com/images/I/912AErFSBHL._AC_SY445_.jpg",
+        "heroImage": "https://belcourt-production.s3.amazonaws.com/wp-content/uploads/2021/08/17101404/Inception-web.jpg",
         "trailer": "https://www.youtube.com/embed/YoHD9XEInc0?si=l52YCHw8u44Y_BvN",
         "rating": 5
     },
@@ -40,7 +42,8 @@
         "category": "Action",
         "director": "Christopher Nolan",
         "mainActors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfE_qrYMBZ_JB8om-34WGaZARhpX26yWRttqIDvn4_7l--UzX8mxKcPrc59IcvTpEA_G8gPA&s=10",
+        "image": "https://www.limitedruns.com/media/cache/00/23/0023b68fb55859eeb5bcc02b629f1494.jpg",
+        "heroImage": "https://dailycollegian.com/wp-content/uploads/2022/04/dark-knight-1-900x450.jpeg",
         "trailer": "https://www.youtube.com/embed/EXeTwQWrcwY?si=uicYTCXcG_usQbZc",
         "rating": 5
     },
@@ -52,7 +55,8 @@
         "category": "Thriller",
         "director": "Bong Joon-ho",
         "mainActors": ["Song Kang-ho", "Lee Sun-kyun", "Cho Yeo-jeong"],
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTRGm5Vxt-AKoe72ASaC0F1w58TkuIQTuYrjrzhHkAcZYXXUS9WQdAuaikkuRMX50MWN01lw&s=10",
+        "image": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/130/2024/03/29150816/7IiTTgloJzvGI1TAYymCfbfl3vT-scaled.jpg",
+        "heroImage": "https://res.klook.com/image/upload/fl_lossy.progressive/q_auto/c_fill,w_1360/blogen/2020/02/Parasite-Seoul-loacations-cover-image-1.webp",
         "trailer": "https://www.youtube.com/embed/isOGD_7hNIY?si=SJoLQHxYZfmsfYU2",
         "rating": 4
     },
@@ -64,7 +68,8 @@
         "category": "Sci-Fi/Adventure",
         "director": "Daniel Kwan, Daniel Scheinert",
         "mainActors": ["Michelle Yeoh", "Stephanie Hsu", "Ke Huy Quan"],
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6n0N5NVFJhglILQYRF9hswb8iQ4lOw3cF2Qy7pH9aRPLZEnGW9cUbWYhyqTko_VJL7D8zQ&s=10",
+        "image": "https://upload.wikimedia.org/wikipedia/en/1/1e/Everything_Everywhere_All_at_Once.jpg",
+        "heroImage": "https://ntvb.tmsimg.com/assets/p21252841_v_h8_aa.jpg?w=960&h=540",
         "trailer": "https://www.youtube.com/embed/wxN1T1uxQ2g?si=IrxZlNMTnGvkVyrx",
         "rating": 5
     },
@@ -77,6 +82,7 @@
         "director": "Hayao Miyazaki",
         "mainActors": ["Rumi Hiiragi", "Miyu Irino", "Mari Natsuki"],
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BOXxai36m4TLf6kXGg9eCzc6JDDbyr6cO6GwsPvgl-BWGCaIw0X3LbP6Vy18dXX9gAvM&s=10",
+        "heroImage": "https://reelsteelcinema.com/wp-content/uploads/2019/01/spiritedaway.jpg",
         "trailer": "https://www.youtube.com/embed/ByXuk9QqQkk?si=wdg_V5xurGkfBtQ-",
         "rating": 5
     }
