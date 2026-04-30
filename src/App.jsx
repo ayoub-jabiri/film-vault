@@ -3,13 +3,11 @@ import "./App.css";
 import AppHeader from "./components/layout/AppHeader";
 import HeroSection from "./components/hero/HeroSection";
 import MoviesSection from "./components/movies/MoviesSection";
-import { useState } from "react";
+// import { useState } from "react";
 
 function App() {
     // localStorage.setItem("movies", JSON.stringify(movies));
-    const [movies, setMovies] = useState(
-        JSON.parse(localStorage.getItem("movies")) || []
-    );
+    const movies = JSON.parse(localStorage.getItem("movies")) || [];
 
     return (
         <>
