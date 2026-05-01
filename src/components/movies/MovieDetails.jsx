@@ -1,23 +1,19 @@
 import { RiCloseLine, RiPlayFill, RiStarFill } from "@remixicon/react";
 import MovieTrailer from "./MovieTrailer";
 import { useState } from "react";
+import UpdateMovie from "./UpdateMovie";
 
-export default function MovieDetails({
-    section,
-    setShowDetails,
-    forceUpdate,
-    movie,
-}) {
+export default function MovieDetails({ setShowDetails, forceUpdate, movie }) {
+    const [showTrailer, setShowTrailer] = useState(false);
+    const [showPopup, setShowPopup] = useState(false);
+
     function hideDetails() {
-        document.getElementById(`movie-${section}-${movie.id}`).style.scale =
-            "0";
+        document.getElementById("movie-details").style.scale = "0";
 
         setTimeout(() => {
             setShowDetails(false);
         }, 300);
     }
-
-    const [showTrailer, setShowTrailer] = useState(false);
 
     function deleteMovie() {
         const movies = JSON.parse(localStorage.getItem("movies"));
@@ -26,14 +22,13 @@ export default function MovieDetails({
         movies.splice(currentMovieIndex, 1);
         localStorage.setItem("movies", JSON.stringify(movies));
 
-        // hideDetails();
-        setShowDetails(false);
+        hideDetails();
         forceUpdate({});
     }
 
     return (
         <div
-            id={`movie-${section}-${movie.id}`}
+            id="movie-details"
             className="fixed top-0 left-0 z-10 w-screen h-screen flex justify-center items-center scale-0"
             style={{ transition: "scale 0.3s" }}
         >
@@ -54,7 +49,7 @@ export default function MovieDetails({
                         <h5 className="text-2xl font-bold whitespace-nowrap overflow-hidden">
                             {movie.title}
                         </h5>
-                        <p className="mb-2">{movie.description}</p>
+                        <p className="text-[#ddd] mb-2">{movie.description}</p>
                         <span className="block text-[#ddd]">
                             Release Year: {movie.releaseYear}
                         </span>
@@ -80,7 +75,7 @@ export default function MovieDetails({
                             </button>
                             <button
                                 className="bg-[#2196F3] text-sm text-white w-[140px] py-3 mt-4 rounded-md cursor-pointer"
-                                onClick={deleteMovie}
+                                onClick={() => setShowPopup(true)}
                             >
                                 Update
                             </button>
@@ -95,6 +90,14 @@ export default function MovieDetails({
                             <MovieTrailer
                                 movieTrailer={movie.trailer}
                                 setShowTrailer={setShowTrailer}
+                            />
+                        )}
+                        {showPopup && (
+                            <UpdateMovie
+                                setShowPopup={setShowPopup}
+                                movie={movie}
+                                setShowDetails={setShowDetails}
+                                forceUpdate={forceUpdate}
                             />
                         )}
                     </div>

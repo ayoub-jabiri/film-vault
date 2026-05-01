@@ -6,7 +6,7 @@ export default function MovieCard({ movie, forceUpdate }) {
     const [showDetails, setShowDetails] = useState(false);
     async function handleShowDetails() {
         await setShowDetails(true);
-        document.getElementById(`movie-list-${movie.id}`).style.scale = "1";
+        document.getElementById("movie-details").style.scale = "1";
     }
 
     return (
@@ -47,7 +47,6 @@ export default function MovieCard({ movie, forceUpdate }) {
             </div>
             {showDetails && (
                 <MovieDetails
-                    section={"list"}
                     setShowDetails={setShowDetails}
                     forceUpdate={forceUpdate}
                     movie={movie}

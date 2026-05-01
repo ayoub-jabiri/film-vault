@@ -6,7 +6,7 @@ export default function HeroSection({ movie, forceUpdate }) {
     const [showDetails, setShowDetails] = useState(false);
     async function handleShowDetails() {
         await setShowDetails(true);
-        document.getElementById(`movie-hero-${movie.id}`).style.scale = "1";
+        document.getElementById("movie-details").style.scale = "1";
     }
 
     return (
@@ -39,7 +39,6 @@ export default function HeroSection({ movie, forceUpdate }) {
             </button>
             {showDetails && (
                 <MovieDetails
-                    section={"hero"}
                     setShowDetails={setShowDetails}
                     forceUpdate={forceUpdate}
                     movie={movie}
