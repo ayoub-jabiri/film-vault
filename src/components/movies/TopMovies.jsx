@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
 
-export default function TopMovies({ movies }) {
+export default function TopMovies({ movies, forceUpdate }) {
     const topRating = Math.max(...movies.map((movie) => movie.rating));
 
     const topMovies = movies
@@ -8,7 +8,7 @@ export default function TopMovies({ movies }) {
         .slice(0, 3);
 
     const topMoviesList = topMovies.map((el) => (
-        <MovieCard key={el.id} movie={el} />
+        <MovieCard key={el.id} movie={el} forceUpdate={forceUpdate} />
     ));
     return (
         <div>
